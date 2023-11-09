@@ -5,8 +5,8 @@ Feature('Liking Restaurants');
 Scenario('Check if favorite page is empty', async ({ I }) => {
   I.amOnPage('/#/favorite');
   await new Promise((resolve) => setTimeout(resolve, 5000));
-  I.seeElement('.no-favorite-message');
-  I.see('Belum ada restaurant favorite', '.no-favorite-message');
+  I.seeElement('.restaurants-not-found');
+  I.see('Tidak ada restaurant untuk ditampilkan', '.restaurants-not-found');
 });
 
 Scenario('add and delete resto', async ({ I }) => {
@@ -28,6 +28,6 @@ Scenario('add and delete resto', async ({ I }) => {
   await new Promise((resolve) => setTimeout(resolve, 5000));
   I.amOnPage('/#/favorite');
   await new Promise((resolve) => setTimeout(resolve, 5000));
-  I.seeElement('.no-favorite-message');
-  I.see('Belum ada restaurant favorite', '.no-favorite-message');
+  I.seeElement('.restaurants-not-found');
+  I.see('Tidak ada restaurant untuk ditampilkan', '.restaurants-not-found');
 });

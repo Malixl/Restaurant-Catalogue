@@ -7,9 +7,6 @@ const Favorite = {
     <div class="explore-list">
       <h1 class="explore-title">Favorite Restaurant</h1>
     </div>
-    <div class="no-favorite-page">
-      <h2 class="no-favorite-message">Belum ada restaurant favorite</h2>
-    </div>
     <div id="restaurants" class="restaurants"></div>
       `;
   },
